@@ -72,7 +72,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: 424242;
+    color: #424242;
     transition: opacity 200ms ease-in-out;
     overflow: hidden;
 }
