@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=Pipe
-comment0.text=Is\ in\ charge\ of\ all\ pipes\n\ Mohamed\ Halat\n\ June\ 15\ 2018\n
-comment1.params=x\ y\ width\ height
-comment1.target=Pipe(int,\ int,\ int,\ int)
-comment1.text=This\ method\ usses\ a\ super\ class\ to\ assign\ all\ the\ variables\ for\ pipes\n\ parameters\:\ x,y\ of\ pipes\n\ no\ returns\ \n
-comment2.params=
-comment2.target=java.awt.Image\ getImgPipe()
-numComments=3
