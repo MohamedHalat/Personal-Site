@@ -1,0 +1,27 @@
+package mario;
+
+import javax.swing.*;
+import java.awt.*;
+/**
+ * Write a description of class Main here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class Main
+{
+    public static Scene scene;
+    public static Keyboard keyboard;
+    public static void main(String args[]){
+        JFrame frame = new JFrame ("Mario");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(800,480);
+        frame.setLocationRelativeTo(null);
+        frame.setResizable(false);
+
+        scene = new Scene();
+        keyboard = new Keyboard();
+        frame.setContentPane(scene);
+        frame.setVisible(true);
+    }
+}

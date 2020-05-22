@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Mushroom
+comment0.text=Is\ in\ charge\ of\ all\ mushrooms\n\ Mohamed\ Halat\n\ June\ 15\ 2018\n
+comment1.params=x\ y
+comment1.target=Mushroom(int,\ int)
+comment1.text=This\ method\ usses\ a\ super\ class\ to\ assign\ all\ the\ variables\ for\ mushrooms\n\ parameters\:\ x,y\ of\ mushrooms\n\ no\ returns\ \n
+comment2.params=
+comment2.target=java.awt.Image\ getImgMushroom()
+comment3.params=object
+comment3.target=void\ contactTo(Mario.Objects.Object)
+comment3.text=This\ method\ checks\ to\ see\ if\ mushroom\ is\ touching\ objects\n\ parameters\:\ object\ to\ check\ collisions\ with\n\ no\ returns\ \n
+numComments=4

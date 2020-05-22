@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Object
+comment0.text=This\ class\ usses\ a\ super\ class\ to\ assign\ all\ the\ variables\ for\ every\ object\n\ Mohamed\ Halat\n\ June\ 15\ 2018\n
+comment1.params=x\ y\ width\ height
+comment1.target=Object(int,\ int,\ int,\ int)
+comment1.text=This\ method\ usses\ a\ super\ class\ to\ assign\ all\ the\ variables\ for\ every\ object\n\ parameters\:\ x,y,width\ and\ height\ of\ every\ object\n\ no\ returns\ \n
+comment10.params=
+comment10.target=void\ deplacement()
+comment11.params=object
+comment11.target=boolean\ topContact(Mario.Characters.Character)
+comment2.params=
+comment2.target=int\ getX()
+comment3.params=
+comment3.target=int\ getY()
+comment4.params=
+comment4.target=int\ getWidth()
+comment5.params=
+comment5.target=int\ getHeight()
+comment6.params=x
+comment6.target=void\ setX(int)
+comment7.params=y
+comment7.target=void\ setY(int)
+comment8.params=width
+comment8.target=void\ setWidth(int)
+comment9.params=height
+comment9.target=void\ setHeight(int)
+numComments=12

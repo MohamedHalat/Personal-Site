@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Goomba
+comment0.text=Is\ in\ charge\ of\ all\ goombas\n\ Mohamed\ Halat\n\ June\ 15\ 2018\n
+comment1.params=x\ y
+comment1.target=Goomba(int,\ int)
+comment1.text=This\ method\ usses\ a\ super\ class\ to\ assign\ all\ the\ variables\ for\ goombas\n\ parameters\:\ x,y\ of\ goombas\n\ no\ returns\ \n
+comment2.params=
+comment2.target=java.awt.Image\ getImgGoomba()
+comment3.params=i
+comment3.target=int\ getHealth(int)
+comment4.params=imgGoomba
+comment4.target=void\ setImgGoomba(java.awt.Image)
+comment5.params=Gethealth\ i
+comment5.target=void\ setHealth(int,\ int)
+comment6.params=object
+comment6.target=void\ contactTo(Mario.Objects.Object)
+comment6.text=This\ method\ checks\ to\ see\ if\ goomba\ is\ touching\ an\ object\n\ parameters\:object\ to\ check\ collisions\ with\n\ no\ returns\ \n
+comment7.params=object
+comment7.target=void\ contactTo(Character)
+comment7.text=This\ method\ checks\ to\ see\ if\ goomba\ is\ touching\ mario\n\ parameters\:\ character/mario\ to\ check\ collisions\ with\n\ no\ returns\ \n
+numComments=8

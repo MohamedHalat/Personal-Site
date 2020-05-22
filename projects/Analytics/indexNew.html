@@ -1,0 +1,201 @@
+<html lang="en">
+
+<head>
+    <title>Analytics Tool</title>
+    <!-- Meta -->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="An Analytics tool for visualizing user sessions">
+    <meta name="author" content="Mohamed Halat">
+
+    <!-- Style Sheets -->
+    <link rel="icon" type="image/svg" href="images/icon.svg">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <!-- Google Charts API -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
+    <!-- Scripts -->
+    <script src="script/var.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/sankey.js"></script>
+    <script src="script/table.js"></script>
+    <script src="script/calendar.js"></script>
+
+    <!-- AnyChart API -->
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-sankey.min.js"></script>
+    <!-- d3 Saneky API NPM -->
+    <script src="https://unpkg.com/d3-array@1"></script>
+    <script src="https://unpkg.com/d3-collection@1"></script>
+    <script src="https://unpkg.com/d3-path@1"></script>
+    <script src="https://unpkg.com/d3-shape@1"></script>
+    <script src="https://unpkg.com/d3-sankey@0"></script>
+
+
+</head>
+
+<body style="background: #F5F5F5;">
+    <!-- Header bar -->
+    <div class="header">
+        <img src="images/icon.svg" alt="Analytics" width="30" height="30" style="margin-top:10px;margin-left:2%;">
+        <h1>
+            Analytics Tool
+        </h1>
+    </div>
+
+    <div
+        style="padding-top:60px;display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; align-items: flex-start;">
+
+        <section class="card" style="width: 20%; flex-grow: 2;">
+            <div class="card-body" style="height: 280px;">
+                <h3>Active Filter</h3>
+                <div id="filter"></div>
+            </div>
+            <footer class="card-footer">
+                <div class="card-footer-content">
+                    <!-- <h5 class="total" id="numberOfUsers"></h5> -->
+                    <button style="display: contents;cursor: pointer;" onclick="resetFilter()">
+                        <h5 style="margin-left:20px;" class="total">Reset</h5>
+                    </button>
+                </div>
+                <!-- Hide Move Edit -->
+            </footer>
+        </section>
+
+        <section class="card" style="width: 60%; max-width: 1100px;">
+            <div class="card-body">
+                <h3>Dates</h3>
+                <div id="calendar" style="width: 115%; height: 200px;"></div>
+            </div>
+            <footer class="card-footer">
+                <div class="card-footer-content">
+                    <h5 class="total" id="numberOfDates">
+                        </h4>
+                </div>
+            </footer>
+        </section>
+
+        <section class="card">
+            <div class="card-body">
+                <h3>Intent Pie Chart</h3>
+                <div id="pieChart"></div>
+            </div>
+            <footer class="card-footer">
+                <div class="card-footer-content">
+                    <h5 class="total" id="pieTotal"></h5>
+                    <button style="display: contents;cursor: pointer;" onclick="resetChartFilter()">
+                        <h5 style="margin-left:20px;" class="total">Reset Chart</h5>
+                    </button>
+                </div>
+            </footer>
+        </section>
+
+
+        <section class="card">
+            <div class="card-body">
+                <h3>Calls</h3>
+                <div id="barChart"></div>
+            </div>
+            <footer class="card-footer">
+                <div class="card-footer-content">
+                    <h5 class="total" id="pieTotal"></h5>
+                    <button style="display: contents; cursor: pointer;" onclick="resetChartFilter()">
+                        <h5 style="margin-left:20px;" class="total">Reset Chart</h5>
+                    </button>
+                </div>
+            </footer>
+        </section>
+        
+        <section class="card" style="flex-grow: 2;">
+            <div class="card-body">
+                <h3>Calls</h3>
+                <div id="table"></div>
+            </div>
+            <footer class="card-footer">
+                <div class="card-footer-content">
+                    <h5 class="total" id="pieTotal"></h5>
+                    <button style="display: contents;cursor: pointer;" onclick="resetChartFilter()">
+                        <h5 style="margin-left:20px;" class="total">Reset Chart</h5>
+                    </button>
+                </div>
+            </footer>
+        </section>
+
+        <section class="card" style="flex-grow: 2;">
+            <div class="card-body">
+                <h3>Intents</h3>
+                <div class="gtable" id="intents">Data will appear here</div>
+            </div>
+            <footer class="card-footer">
+                <div class="card-footer-content">
+                    <h5 class="total" id="numberOfIntents"></h5>
+                </div>
+                <!-- Hide Move Edit -->
+            </footer>
+        </section>
+
+        <section class="card" style="flex-grow: 2;">
+            <div class="card-body">
+                <h3>Sessions</h3>
+                <div class="gtable" id="sessions">Data will appear here</div>
+            </div>
+            <footer class="card-footer">
+                <div class="card-footer-content">
+                    <h5 class="total" id="numberOfSessions"></h5>
+                </div>
+                <!-- Hide Move Edit -->
+            </footer>
+        </section>
+
+        <section class="card" style="flex-grow: 2;">
+            <div class="card-body">
+                <h3>Users</h3>
+                <div class="gtable" id="users">Data will appear here</div>
+            </div>
+            <footer class="card-footer">
+                <div class="card-footer-content">
+                    <h5 class="total" id="numberOfUsers"></h5>
+                </div>
+                <!-- Hide Move Edit -->
+            </footer>
+        </section>
+
+        <section class="card" style="width: 100%; max-width: 900px;">
+            <div class="card-body">
+                <h3>Sankey</h3>
+                <div id="sankey_basic"></div>
+            </div>
+            <footer class="card-footer">
+                <div class="card-footer-content">
+                    <h5 class="total" id="sankeyTotal"></h5>
+                    <h5 class="total" id="sankeyTotalNodes"></h5>
+                    <button style="display: contents;cursor: pointer;" onclick="show()">
+                        <h5 id="show" style="margin-left:20px;" class="total">Show All</h5>
+                    </button>
+                </div>
+                <!-- Hide Move Edit -->
+            </footer>
+        </section>
+
+        <section class="card" style="display: none;">
+            <div class="card-body">
+                <h3>JSON</h3>
+                <div raw-table="" class="data-table" data-ng-show="dataView=='table'">
+                    <div id="tables">Data will appear here</div>
+                </div>
+            </div>
+            <footer class="card-footer">
+                <div class="card-footer-content">
+
+                </div>
+                <!-- Hide Move Edit -->
+            </footer>
+        </section>
+    </div>
+    </div>
+</body>
+
+</html>

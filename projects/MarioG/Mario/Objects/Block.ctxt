@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Block
+comment0.text=Is\ in\ charge\ of\ all\ blocks\n\ Mohamed\ Halat\n\ June\ 15\ 2018\n
+comment1.params=x\ y
+comment1.target=Block(int,\ int)
+comment1.text=This\ method\ usses\ a\ super\ class\ to\ assign\ all\ the\ variables\ \n\ parameters\:\ x,y\ \n\ no\ returns\ \n
+comment2.params=
+comment2.target=java.awt.Image\ getImgBlock()
+numComments=3
