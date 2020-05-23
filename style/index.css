@@ -166,3 +166,28 @@ nav ul li a:hover::after {
     from, to { border-color: transparent }
     50% { border-color: #fcb934; }
   }
+
+  @media only screen and (max-width: 900px) {
+.typewriter h1{
+    font-size: 30px;
+}  
+}
+
+
+@media only screen and (max-width: 700px) {
+.typewriter h1{
+    font-size: 25px;
+}  
+
+nav{
+    display: none;
+}
+.nav-footer{
+    display: none;
+}
+}
+@media only screen and (max-width: 500px) {
+    .typewriter h1{
+        font-size: 75%;
+    }  
+}
