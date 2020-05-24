@@ -9,9 +9,11 @@ body {
     color: #313639;
 }
 
-
+.text-emphasis{
+    color:#fcb934;
+}
 .card {
-    width: 350px;
+    width: 400px;
     margin: 1%;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
@@ -49,6 +51,13 @@ body {
     font-size: 20px;
 }
   
+.card-text{
+    padding: 3%;
+    padding-top:0%;
+}
+.card-tags{
+    padding-top:1%;
+}
   .tags {
     list-style: none;
     margin: 0;
