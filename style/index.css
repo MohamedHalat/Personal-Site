@@ -17,14 +17,14 @@ body {
     width: 400px;
     margin: 1%;
     margin-top: 2.5%;
-    margin-bottom: 2.5%;
-    background: black;
-    box-sizing: border-box;
+    /* margin-bottom: 2.5%; */
+    /* background: black; */
+    /* box-sizing: border-box; */
     /* box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.10);*/
-    border-radius: 9px;
+    /* border-radius: 9px; */
     min-height: 240px;
-    height: auto;
-    background-color: #fcb934;
+    /* height: auto; */
+    /* background-color: #fcb934; */
 }
 
 .margin-center{
@@ -70,7 +70,7 @@ body {
 .card-footer {
     background: #fcb934;
     box-sizing: border-box;
-    border-radius: 9px;
+    border-radius: 0px 0px 9px 9px;
     min-height: 24px;
     height: auto;
 }
