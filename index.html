@@ -23,6 +23,7 @@
 </head>
 
 <body>
+    <!-- Nav -->
     <nav>
         <div class="headline" style="display: inline-flex;">
             <div style="margin:auto 10 auto 50">
@@ -52,6 +53,7 @@
     </nav>
     <footer class="nav-footer" style="height: 2px;width:100%; background-color: #fcb934; position: fixed;">
     </footer>
+    <!-- Main Body -->
     <main>
         <section id="home"
             style="background:linear-gradient(90deg, #4B6CB7 0%, #182848 100%);overflow-y: hidden; height: 40%;">
@@ -69,31 +71,33 @@
             </div>
         </section>
 
-        <section id="about" style="background-color: white; padding: 30px 0px 0px 0px; height: auto !important;">
-            <div style="width: 80%; margin:0 auto; padding: 4%;">
+        <!-- About Section -->
+        <section id="about">
+            <!-- Head -->
+            <div class="margin-center" style="padding: 4%;">
                 <div>
-                    <div class="headline" style="line-height:50px;">
+                    <div class="headline margin-center" style="width: 40%;">
                         <div>
-                            <h2 class="header" style=" border-color: #fcb934; border-width: 0px 0px 1px
-                                0px; border-style: solid;">About Me</h2>
+                            <h2 class="header underline">About Me</h2>
                         </div>
                     </div>
                 </div>
-
-                <div
-                    style="display:flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap-reverse;">
-                    <div style="text-align: center; margin: 0 auto; ">
-                        <span style="line-height: 60px;">You can find me on</span>
-                        <div style="margin-top:2%;width: auto; margin:0 auto; flex-grow: 5;">
+                <!-- Body -->
+                <div class="flex-container margin-center" style="width: 60%; max-width: 1800px;">
+                    <!-- Links -->
+                    <div class="margin-center text-center">
+                        <span class="subtitle"> You can find me on </span>
+                        <div class="margin-center" style="margin-top:2%;">
                             <a style="text-decoration: none;" href="https://www.linkedin.com/in/mohamed-halat/" target="_blank" rel="noreferrer">
-                                <img src="images/LinkedIn.svg" alt="Linked In" style="width: 40%; cursor: pointer;">
+                                <img src="images/LinkedIn.svg" alt="Linked In" >
                             </a>
                             <a style="text-decoration: none;" href="https://github.com/MohamedHalat" target="_blank" rel="noreferrer">
                                 <img src="images/Git.svg" alt="GitHub" style="width: 40%; cursor: pointer;">
                             </a>
                         </div>
                     </div>
-                    <div style=" text-align: center; margin:0 auto;">
+                    <!-- Text Body -->
+                    <div class="margin-center text-center">
                         <span>
                             <p>
                                 Hi! I'm Mohamed Halat, a student who likes to code.
@@ -108,27 +112,34 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
 
-        <section id="education" style="background-color: #f5f5f5; padding: 30px 0px 0px 0px; height: auto !important;">
+
+        <section id="education" style="background-color: #f5f5f5; padding: 30px 0px 0px 0px;">
             <div style="width: 80%; margin:0 auto;">
                 <div style="padding: 5%;">
                     <div class="headline" style="line-height:50px;">
                         <div style="text-align:initial; padding: 0 4%;">
-                            <h2 class="header" style=" border-color: #fcb934; border-width: 0px 0px 1px
-                                0px; border-style: solid;">Education</h2>
+                            <h2 class="header underline">Education</h2>
                         </div>
                     </div>
 
-                    <div style="display:flex; justify-content: space-evenly; align-items: baseline; flex-wrap: wrap;">
-                        <div>
-                            <img style="width: 400px;" src="images/utscblue.png" alt="">
+                    <div class="flex-container">
+                        <div style="width: 50%; text-align:center; margin: 0 auto;">
+                            <img style="width: 70%;" src="images/utscblue.png" alt="">
                         </div>
-                        <div style="padding:4%; text-align: center; margin:0 auto;">
+                        <div style="padding:1%; margin:0 auto; text-align: center;">
                             <span>
-                                Currently enrolled at University of Toronto Scarborough in the <span
-                                    class="text-emphasis">Computer Science</span> Coop Program.
+                                <p>
+                                    Currently enrolled at University of Toronto
+                                </p>
+                                <p>
+                                    Scarborough in the
+                                    <span class="text-emphasis">Computer Science</span> 
+                                </p>
+                                <p>
+                                      Coop Program.
+                                </p>
                             </span>
                         </div>
                     </div>
@@ -240,7 +251,7 @@
                                 Here are some of the projects I've been working on either for class, work or as personal projects.
                             </span>
 
-                            <div class="flex-container" style="padding-top:60px; ">
+                            <div class="flex-container" style="padding-top:60px;margin: 0 -100px; ">
                                 <section class="card">
                                     <div class="card-body">
                                         <h3 class="card-head">TicTacToe</h3>
