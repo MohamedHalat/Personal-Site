@@ -1,3 +1,2 @@
 # Personal-Site
-Mohamedhalat.com personal site
-This is currently Incomplete
+[My personal site](mohamedhalat.com) is currently incomplete.
